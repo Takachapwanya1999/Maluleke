@@ -11,9 +11,9 @@ const Header: React.FC = () => {
   const { state: authState, logout } = useAuth();
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
-  const [showUserMenu, setShowUserMenu] = useState(false);
+  const [showUserMenu, setShowUserMenu] = useState(false);  
   const location = useLocation();
-  const cartItemCount = getItemCount();  
+  const cartItemCount = getItemCount();     
 
   const isActive = (path: string) => location.pathname === path;
 
