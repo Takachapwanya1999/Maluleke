@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const handleAuthClick = (mode: 'login' | 'register') => {
+  const handleAuthClick = (mode: 'login' | 'register') => { 
     setAuthMode(mode);
     setShowAuthModal(true);
   };
